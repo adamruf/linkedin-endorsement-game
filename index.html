@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Endorsement Game Launcher</title>
+  <meta name="description" content="Press the button and launch the LinkedIn connection endorsement game.">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /* - - - - - - - - - - - - - - - - - - - - *\
+    GLOBAL
+    \* - - - - - - - - - - - - - - - - - - - - */
+    html {height: 100%;}
+    body {
+      background-color: #f1f1f1;
+      color: rgba(0, 0, 0, 0.8);
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 62.5%;
+      height: 100%;
+    }
+    h1 {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 5rem;
+      font-weight: 900;
+    }
+    p, ul {font-size: 2.3rem;}
+    a {
+      color: #3498db;
+      font-weight: 600;
+    }
+    a:hover, a:active, a:focus {
+      color: #2980b9;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(253, 0, 129, 0.33);
+    }
+    .jumbotron {
+      height: 100%;
+      margin-bottom: 0;
+      padding: 8rem 0 10rem;
+    }
+    @media screen and (min-width: 768px) {
+      .jumbotron .h1, .jumbotron h1 {
+          font-size: 5rem;
+      }
+    }
+    .btn {border-radius: 0.75rem;}
+    .btn-primary {
+      background-color: #3498db;
+      border-color: rgba(0,0,0,0.25);
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+      letter-spacing: 0.025em;
+      transition: background-color 0.2s ease-in-out;
+      width: 100%;
+    }
+    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+      background-color: #2980b9;
+      border-color: rgba(0,0,0,0.25);
+      outline: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
+      background-color: #2980b9;
+      border-color: rgba(0,0,0,0.25);
+      box-shadow: none;
+      margin-top: 0.05em;
+      margin-bottom: 0.95em;
+      outline: none;
+    }
+    .btn-primary[disabled], .btn-primary[disabled]:hover {
+      background-color: #3498db;
+      box-shadow: none;
+    }
+    footer {
+      bottom: 2rem;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+    }
+    footer ul {
+      font-size: 1.4rem;
+    }
+    @media (max-height: 237px) {
+      footer {
+        position: relative;
+        bottom: 0;
+      }
+    }
+    /* - - - - - - - - - - - - - - - - - - - - *\
+    HELPERS
+    \* - - - - - - - - - - - - - - - - - - - - */
+    span.small {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 100;
+      line-height: 1.3em;
+      margin-bottom: 1.3rem;
+    }
+    .size-lg {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 1.75rem;
+    }
+    .size-xl {
+      font-size: 3rem;
+      padding: 1.25rem;
+    }
+    .headroom-xs {margin-top: 1rem;}
+    .headroom-sm {margin-top: 2rem;}
+    .legroom-xs {margin-bottom: 1em;}
+    .legroom-md {margin-bottom: 3rem;}
+    .muted-text {color: rgba(0, 0, 0, 0.33);}
+    .muted-text a {
+      color: rgba(52, 152, 219, 0.6);
+      font-weight: 100;
+    }
+    .muted-text a:hover {
+      color: rgba(52, 152, 219, 0.75);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(52, 152, 219, 0.33);
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container-fluid">
+<!--       <div class="row text-center">
+        <div class="col-md-12 legroom-sm">
+          <h1>Ready to endorse your LinkedIn connections?</h1>
+        </div>
+      </div> -->
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <a class="btn btn-primary size-lg legroom-xs" href="https://www.linkedin.com/profile/edit?eslIsEncrypted=f&amp;showSuggestedEndorsements=true" target="_blank">Launch <i class="fa fa-linkedin-square"></i> endorsement game</a>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 col-md-offset-4">
+          <!--embed typeform here -->
+        </div>
+        <div class="col-md-12 headroom-sm">
+          <footer>
+            <ul class="list-inline muted-text">
+              <li>&copy;2015 a tool by <a href="http://adamruf.com">Adam Ruf</a></li>
+              <li>|</li>
+              <li>Made with <i class="fa fa-code"></i> in SF</li>
+              <li>|</li>
+              <li><a href="https://github.com/adamruf/linkedin-endorsement-game-launcher"><i class="fa fa-github-square"></i> Fork on GitHub</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
