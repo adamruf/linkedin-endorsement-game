@@ -12,7 +12,7 @@
     \* - - - - - - - - - - - - - - - - - - - - */
     html {height: 100%;}
     body {
-      background-color: #f1f1f1;
+      background-color: #e7e9ec;
       color: rgba(0, 0, 0, 0.8);
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
       font-size: 62.5%;
@@ -20,8 +20,13 @@
     }
     h1 {
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 5rem;
-      font-weight: 900;
+      font-size: 4rem;
+      font-weight: 300;
+    }
+    @media screen and (min-width: 768px) {
+    .jumbotron .h1, .jumbotron h1 {
+        font-size: 4rem;
+      }
     }
     p, ul {font-size: 2.3rem;}
     a {
@@ -34,7 +39,7 @@
       border-bottom: 1px solid rgba(253, 0, 129, 0.33);
     }
     .jumbotron {
-      background: #f1f1f1;
+      background-color: #e7e9ec;
     }
     .hero-img {
       max-width: 800px;
@@ -51,7 +56,6 @@
     }
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
       background-color: #2980b9;
-      border-color: rgba(0,0,0,0.25);
       outline: none;
       transition: background-color 0.2s ease-in-out;
     }
@@ -104,7 +108,7 @@
     .headroom-xs {margin-top: 1rem;}
     .headroom-sm {margin-top: 2rem;}
     .legroom-xs {margin-bottom: 1em;}
-    .legroom-md {margin-bottom: 3rem;}
+    .legroom-md {margin-bottom: 3rem !important;}
     .muted-text {color: rgba(0, 0, 0, 0.33);}
     .muted-text a {
       color: rgba(52, 152, 219, 0.6);
@@ -120,16 +124,17 @@
 <body>
   <div class="jumbotron">
     <div class="container-fluid">
-<!--       <div class="row text-center">
-        <div class="col-md-12 legroom-sm">
-          <h1>Ready to endorse your LinkedIn connections?</h1>
-        </div>
-      </div> -->
-      <div class="col-md-12 legroom-sm text-center">
-        <img class="hero-img" src="img/hero.png" alt="Example of LinkedIn's connection endorsement game">
-      </div>
       <div class="row text-center">
-        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="col-md-12 legroom-sm">
+          <h1>How many skills can you endorse in 1 minute?</h1>
+          <p class="legroom-md"><em>An easy way to launch LinkedIn with the endorsement widget displayed by default</em></p>
+        </div>
+      </div>
+      <!-- <div class="col-md-12 legroom-sm text-center">
+        <img class="hero-img" src="img/hero.png" alt="Example of LinkedIn's connection endorsement game">
+      </div> -->
+      <div class="row text-center">
+        <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
           <a class="btn btn-primary size-lg legroom-xs" href="https://www.linkedin.com/profile/edit?eslIsEncrypted=f&amp;showSuggestedEndorsements=true" target="_blank">Launch <i class="fa fa-linkedin-square"></i> endorsement game</a>
         </div>
       </div>
@@ -141,11 +146,9 @@
         <div class="col-md-12 headroom-sm">
           <footer>
             <ul class="list-inline muted-text">
-              <li>&copy;2015 a tool by <a href="http://adamruf.com">Adam Ruf</a></li>
+              <li>&copy;2015 by <a href="http://adamruf.com">Adam Ruf</a></li>
               <li>|</li>
               <li>Made with <i class="fa fa-code"></i> in SF</li>
-              <li>|</li>
-              <li><a href="https://github.com/adamruf/linkedin-endorsement-game-launcher"><i class="fa fa-github-square"></i> Fork on GitHub</a></li>
             </ul>
           </footer>
         </div>
